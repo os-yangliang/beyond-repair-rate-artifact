@@ -6,6 +6,8 @@ Version **1.1.0** retains all 38 copied files from the three original analysis s
 
 ## One-command offline reproduction
 
+Version 1.1.1 preserves all committed file bytes with `.gitattributes`, including on Windows checkouts configured for automatic line-ending conversion. This corrects a checkout-integrity issue in 1.1.0 without changing any analysis input or result. Use a fresh checkout of 1.1.1 or later for the hash-verified commands below.
+
 Requirements: Python **3.9 or later**, standard library only. No package installation, network connection, credentials, model, Docker or benchmark installation is required. From the repository root:
 
 ```console
