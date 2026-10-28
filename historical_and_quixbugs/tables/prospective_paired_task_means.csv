@@ -1,0 +1,5 @@
+service,timepoint,independent_tasks,repetitions_per_task,paired_task_repetitions_not_independent_tasks,mean_of_task_means_SEED_minus_FULL,SEED_wins,FULL_wins,same_known_outcome,unknown_pairs
+qwen,first_opportunity,2,3,6,-0.5,0,3,3,0
+qwen,final_delivery,2,3,6,0.0,0,0,6,0
+kimi,first_opportunity,2,3,6,-0.5,0,3,3,0
+kimi,final_delivery,2,3,6,0.0,0,0,6,0

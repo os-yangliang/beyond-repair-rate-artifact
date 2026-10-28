@@ -1,0 +1,3 @@
+complete_outcome,endpoint_outcome,identity,public_outcome
+FAIL,PASS,quixbugs:next_palindrome,FAIL
+FAIL,FAIL,quixbugs:pascal,FAIL

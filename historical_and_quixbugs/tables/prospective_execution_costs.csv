@@ -1,0 +1,5 @@
+cli,elapsed_seconds,jobs,stage
+324,70.32521454617381,36,new_public_execution
+162,35.13612019829452,18,new_heldout_execution
+3024,685.7908032927662,336,existing_P0_spectrum_collection_not_reexecuted
+162,39.285430040210485,18,existing_interface_validation_not_reexecuted

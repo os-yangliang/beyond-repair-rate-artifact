@@ -1,0 +1,25 @@
+service,timepoint,identity,domain_stratum,arm,repetitions,complete_pass,complete_fail,complete_unknown,task_mean_success
+qwen,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,SEED,3,0,3,0,0.0
+qwen,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,CLOSURE,3,0,3,0,0.0
+qwen,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,FULL,3,0,3,0,0.0
+qwen,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,SEED,3,0,3,0,0.0
+qwen,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,CLOSURE,3,3,0,0,1.0
+qwen,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,FULL,3,3,0,0,1.0
+qwen,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,SEED,3,0,3,0,0.0
+qwen,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,CLOSURE,3,0,3,0,0.0
+qwen,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,FULL,3,0,3,0,0.0
+qwen,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,SEED,3,3,0,0,1.0
+qwen,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,CLOSURE,3,3,0,0,1.0
+qwen,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,FULL,3,3,0,0,1.0
+kimi,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,SEED,3,3,0,0,1.0
+kimi,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,CLOSURE,3,3,0,0,1.0
+kimi,first_opportunity,quixbugs:next_palindrome,SEED = CLOSURE < FULL,FULL,3,3,0,0,1.0
+kimi,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,SEED,3,0,3,0,0.0
+kimi,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,CLOSURE,3,3,0,0,1.0
+kimi,first_opportunity,quixbugs:pascal,SEED < CLOSURE = FULL,FULL,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,SEED,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,CLOSURE,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:next_palindrome,SEED = CLOSURE < FULL,FULL,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,SEED,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,CLOSURE,3,3,0,0,1.0
+kimi,final_delivery,quixbugs:pascal,SEED < CLOSURE = FULL,FULL,3,3,0,0,1.0

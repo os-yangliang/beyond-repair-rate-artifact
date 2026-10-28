@@ -1,0 +1,18 @@
+{
+  "history_manifest": {
+    "bytes": 2359,
+    "sha256": "83bc2129aacd9e56a8b1b141e35f1e77583e328cb50804c6f00f7b3c59c89d6e"
+  },
+  "prospective_input": {
+    "bytes": 31353,
+    "file": "prospective.json",
+    "sha256": "246470311031c5592ca0797599b909402dc1df3f2dbae4db33135da423c5f239",
+    "source_analysis": {
+      "bytes": 72123,
+      "label": "quixbugs_two_task_closed_analysis",
+      "sha256": "d61211021e55586e3fa2afe7f126fdccb41e9928252832355f4598e7ffcc5055"
+    }
+  },
+  "schema_version": 2,
+  "scope": "sanitized_analysis_replay_only"
+}

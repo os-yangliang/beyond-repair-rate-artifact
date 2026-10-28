@@ -1,0 +1,25 @@
+service,timepoint,identity,replicate_index,domain_stratum,SEED,CLOSURE,FULL,SEED_minus_FULL,pair
+qwen,first_opportunity,quixbugs:next_palindrome,0,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,first_opportunity,quixbugs:next_palindrome,1,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,first_opportunity,quixbugs:next_palindrome,2,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,first_opportunity,quixbugs:pascal,0,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+qwen,first_opportunity,quixbugs:pascal,1,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+qwen,first_opportunity,quixbugs:pascal,2,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+qwen,final_delivery,quixbugs:next_palindrome,0,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,final_delivery,quixbugs:next_palindrome,1,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,final_delivery,quixbugs:next_palindrome,2,SEED = CLOSURE < FULL,FAIL,FAIL,FAIL,0,tie
+qwen,final_delivery,quixbugs:pascal,0,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie
+qwen,final_delivery,quixbugs:pascal,1,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie
+qwen,final_delivery,quixbugs:pascal,2,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie
+kimi,first_opportunity,quixbugs:next_palindrome,0,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,first_opportunity,quixbugs:next_palindrome,1,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,first_opportunity,quixbugs:next_palindrome,2,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,first_opportunity,quixbugs:pascal,0,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+kimi,first_opportunity,quixbugs:pascal,1,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+kimi,first_opportunity,quixbugs:pascal,2,SEED < CLOSURE = FULL,FAIL,PASS,PASS,-1,FULL_win
+kimi,final_delivery,quixbugs:next_palindrome,0,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,final_delivery,quixbugs:next_palindrome,1,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,final_delivery,quixbugs:next_palindrome,2,SEED = CLOSURE < FULL,PASS,PASS,PASS,0,tie
+kimi,final_delivery,quixbugs:pascal,0,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie
+kimi,final_delivery,quixbugs:pascal,1,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie
+kimi,final_delivery,quixbugs:pascal,2,SEED < CLOSURE = FULL,PASS,PASS,PASS,0,tie

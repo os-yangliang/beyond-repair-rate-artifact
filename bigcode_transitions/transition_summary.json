@@ -1,0 +1,1616 @@
+{
+  "schema_version": 1,
+  "source_analysis_sha256": "0e70311d0073b2ff0a95c879244b20936dd41b85668175731a554147d8787650",
+  "projection_sha256": "4502552cd74dd873252f4c9711dbe7fd402d3623559e8b48e3701723c95aae61",
+  "early_stop_tasks": [
+    "595",
+    "713",
+    "796",
+    "860",
+    "1097",
+    "1111"
+  ],
+  "transitions": [
+    {
+      "service": "qwen",
+      "partition": "C0",
+      "tasks": 29,
+      "paired_task_repetitions": 87,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 87,
+      "R1_actual_generation": 87,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 87,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 0,
+      "R1_public_all_pass_stop": 48,
+      "R1_public_stop_Tstar_pass": 40,
+      "R1_public_stop_Tstar_fail": 8,
+      "first_Tstar_pass": 40,
+      "first_Tstar_fail": 47,
+      "prepared_continuation": 39,
+      "actual_second_generation": 39,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 40,
+      "released_final_Tstar_pass": 10,
+      "released_actual_final_Tstar_pass": 10,
+      "final_Tstar_pass": 50,
+      "first_tokens": 447521,
+      "total_tokens": 640387,
+      "R2_tokens": 192866,
+      "first_generation_HTTP_seconds": 435.8409999998985,
+      "total_generation_HTTP_seconds": 625.9520000001648,
+      "first_tokenizer_HTTP_seconds": 15.62099999981001,
+      "total_tokenizer_HTTP_seconds": 17.43499999982305,
+      "R1_response_status_counts": {
+        "valid_candidate": 59,
+        "no_change": 28
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "qwen",
+      "partition": "C1",
+      "tasks": 29,
+      "paired_task_repetitions": 87,
+      "P0_public_early_stop": 18,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 18,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 69,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 69,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 18,
+      "R1_public_all_pass_stop": 33,
+      "R1_public_stop_Tstar_pass": 24,
+      "R1_public_stop_Tstar_fail": 9,
+      "first_Tstar_pass": 24,
+      "first_Tstar_fail": 63,
+      "prepared_continuation": 36,
+      "actual_second_generation": 36,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 24,
+      "released_final_Tstar_pass": 11,
+      "released_actual_final_Tstar_pass": 11,
+      "final_Tstar_pass": 35,
+      "first_tokens": 352689,
+      "total_tokens": 529506,
+      "R2_tokens": 176817,
+      "first_generation_HTTP_seconds": 362.4860000006156,
+      "total_generation_HTTP_seconds": 520.0050000005867,
+      "first_tokenizer_HTTP_seconds": 25.605999999679625,
+      "total_tokenizer_HTTP_seconds": 27.154999999911524,
+      "R1_response_status_counts": {
+        "valid_candidate": 43,
+        "no_request_early_stop": 18,
+        "no_change": 26
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "kimi",
+      "partition": "C0",
+      "tasks": 29,
+      "paired_task_repetitions": 87,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 87,
+      "R1_actual_generation": 84,
+      "R1_local_admission_refusal": 3,
+      "R1_decoder_accepted": 38,
+      "R1_decoder_rejected": 46,
+      "R1_no_decoder": 3,
+      "R1_public_all_pass_stop": 26,
+      "R1_public_stop_Tstar_pass": 24,
+      "R1_public_stop_Tstar_fail": 2,
+      "first_Tstar_pass": 24,
+      "first_Tstar_fail": 63,
+      "prepared_continuation": 61,
+      "actual_second_generation": 58,
+      "R2_local_admission_refusal": 3,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 24,
+      "released_final_Tstar_pass": 5,
+      "released_actual_final_Tstar_pass": 5,
+      "final_Tstar_pass": 29,
+      "first_tokens": 377456,
+      "total_tokens": 650587,
+      "R2_tokens": 273131,
+      "first_generation_HTTP_seconds": 246.11000000068452,
+      "total_generation_HTTP_seconds": 417.3880000009667,
+      "first_tokenizer_HTTP_seconds": 0.0,
+      "total_tokenizer_HTTP_seconds": 0.0,
+      "R1_response_status_counts": {
+        "invalid_response": 46,
+        "valid_candidate": 34,
+        "no_change": 4,
+        "budget_refusal": 3
+      },
+      "R1_decoder_rejection_counts": {
+        "single_complete_function_required": 46
+      }
+    },
+    {
+      "service": "kimi",
+      "partition": "C1",
+      "tasks": 29,
+      "paired_task_repetitions": 87,
+      "P0_public_early_stop": 18,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 18,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 66,
+      "R1_local_admission_refusal": 3,
+      "R1_decoder_accepted": 35,
+      "R1_decoder_rejected": 31,
+      "R1_no_decoder": 21,
+      "R1_public_all_pass_stop": 23,
+      "R1_public_stop_Tstar_pass": 18,
+      "R1_public_stop_Tstar_fail": 5,
+      "first_Tstar_pass": 18,
+      "first_Tstar_fail": 69,
+      "prepared_continuation": 46,
+      "actual_second_generation": 43,
+      "R2_local_admission_refusal": 3,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 18,
+      "released_final_Tstar_pass": 2,
+      "released_actual_final_Tstar_pass": 2,
+      "final_Tstar_pass": 20,
+      "first_tokens": 293573,
+      "total_tokens": 492100,
+      "R2_tokens": 198527,
+      "first_generation_HTTP_seconds": 187.00099999911617,
+      "total_generation_HTTP_seconds": 304.89199999859557,
+      "first_tokenizer_HTTP_seconds": 0.0,
+      "total_tokenizer_HTTP_seconds": 0.0,
+      "R1_response_status_counts": {
+        "invalid_response": 31,
+        "valid_candidate": 29,
+        "no_request_early_stop": 18,
+        "no_change": 6,
+        "budget_refusal": 3
+      },
+      "R1_decoder_rejection_counts": {
+        "single_complete_function_required": 30,
+        "exact_signature_bytes_changed": 1
+      }
+    }
+  ],
+  "stratum_transitions": [
+    {
+      "service": "qwen",
+      "partition": "C0",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 18,
+      "R1_actual_generation": 18,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 18,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 0,
+      "R1_public_all_pass_stop": 9,
+      "R1_public_stop_Tstar_pass": 9,
+      "R1_public_stop_Tstar_fail": 0,
+      "first_Tstar_pass": 9,
+      "first_Tstar_fail": 9,
+      "prepared_continuation": 9,
+      "actual_second_generation": 9,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 9,
+      "released_final_Tstar_pass": 4,
+      "released_actual_final_Tstar_pass": 4,
+      "final_Tstar_pass": 13,
+      "first_tokens": 90081,
+      "total_tokens": 135136,
+      "R2_tokens": 45055,
+      "first_generation_HTTP_seconds": 91.12300000002142,
+      "total_generation_HTTP_seconds": 135.73200000007637,
+      "first_tokenizer_HTTP_seconds": 1.716999999829568,
+      "total_tokenizer_HTTP_seconds": 2.122999999905005,
+      "R1_response_status_counts": {
+        "valid_candidate": 12,
+        "no_change": 6
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "qwen",
+      "partition": "C0",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 69,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 69,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 0,
+      "R1_public_all_pass_stop": 39,
+      "R1_public_stop_Tstar_pass": 31,
+      "R1_public_stop_Tstar_fail": 8,
+      "first_Tstar_pass": 31,
+      "first_Tstar_fail": 38,
+      "prepared_continuation": 30,
+      "actual_second_generation": 30,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 31,
+      "released_final_Tstar_pass": 6,
+      "released_actual_final_Tstar_pass": 6,
+      "final_Tstar_pass": 37,
+      "first_tokens": 357440,
+      "total_tokens": 505251,
+      "R2_tokens": 147811,
+      "first_generation_HTTP_seconds": 344.71799999987707,
+      "total_generation_HTTP_seconds": 490.2200000000885,
+      "first_tokenizer_HTTP_seconds": 13.903999999980442,
+      "total_tokenizer_HTTP_seconds": 15.311999999918044,
+      "R1_response_status_counts": {
+        "valid_candidate": 47,
+        "no_change": 22
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "qwen",
+      "partition": "C1",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "P0_public_early_stop": 18,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 18,
+      "R1_positions_prepared": 0,
+      "R1_actual_generation": 0,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 0,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 18,
+      "R1_public_all_pass_stop": 0,
+      "R1_public_stop_Tstar_pass": 0,
+      "R1_public_stop_Tstar_fail": 0,
+      "first_Tstar_pass": 0,
+      "first_Tstar_fail": 18,
+      "prepared_continuation": 0,
+      "actual_second_generation": 0,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 0,
+      "released_final_Tstar_pass": 0,
+      "released_actual_final_Tstar_pass": 0,
+      "final_Tstar_pass": 0,
+      "first_tokens": 0,
+      "total_tokens": 0,
+      "R2_tokens": 0,
+      "first_generation_HTTP_seconds": 0,
+      "total_generation_HTTP_seconds": 0,
+      "first_tokenizer_HTTP_seconds": 0,
+      "total_tokenizer_HTTP_seconds": 0,
+      "R1_response_status_counts": {
+        "no_request_early_stop": 18
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "qwen",
+      "partition": "C1",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 69,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 69,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 0,
+      "R1_public_all_pass_stop": 33,
+      "R1_public_stop_Tstar_pass": 24,
+      "R1_public_stop_Tstar_fail": 9,
+      "first_Tstar_pass": 24,
+      "first_Tstar_fail": 45,
+      "prepared_continuation": 36,
+      "actual_second_generation": 36,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 24,
+      "released_final_Tstar_pass": 11,
+      "released_actual_final_Tstar_pass": 11,
+      "final_Tstar_pass": 35,
+      "first_tokens": 352689,
+      "total_tokens": 529506,
+      "R2_tokens": 176817,
+      "first_generation_HTTP_seconds": 362.4860000006156,
+      "total_generation_HTTP_seconds": 520.0050000005867,
+      "first_tokenizer_HTTP_seconds": 25.605999999679625,
+      "total_tokenizer_HTTP_seconds": 27.154999999911524,
+      "R1_response_status_counts": {
+        "valid_candidate": 43,
+        "no_change": 26
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "kimi",
+      "partition": "C0",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 18,
+      "R1_actual_generation": 18,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 8,
+      "R1_decoder_rejected": 10,
+      "R1_no_decoder": 0,
+      "R1_public_all_pass_stop": 6,
+      "R1_public_stop_Tstar_pass": 6,
+      "R1_public_stop_Tstar_fail": 0,
+      "first_Tstar_pass": 6,
+      "first_Tstar_fail": 12,
+      "prepared_continuation": 12,
+      "actual_second_generation": 12,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 6,
+      "released_final_Tstar_pass": 4,
+      "released_actual_final_Tstar_pass": 4,
+      "final_Tstar_pass": 10,
+      "first_tokens": 80930,
+      "total_tokens": 135997,
+      "R2_tokens": 55067,
+      "first_generation_HTTP_seconds": 57.047000000369735,
+      "total_generation_HTTP_seconds": 93.78100000042468,
+      "first_tokenizer_HTTP_seconds": 0.0,
+      "total_tokenizer_HTTP_seconds": 0.0,
+      "R1_response_status_counts": {
+        "invalid_response": 10,
+        "valid_candidate": 8
+      },
+      "R1_decoder_rejection_counts": {
+        "single_complete_function_required": 10
+      }
+    },
+    {
+      "service": "kimi",
+      "partition": "C0",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 66,
+      "R1_local_admission_refusal": 3,
+      "R1_decoder_accepted": 30,
+      "R1_decoder_rejected": 36,
+      "R1_no_decoder": 3,
+      "R1_public_all_pass_stop": 20,
+      "R1_public_stop_Tstar_pass": 18,
+      "R1_public_stop_Tstar_fail": 2,
+      "first_Tstar_pass": 18,
+      "first_Tstar_fail": 51,
+      "prepared_continuation": 49,
+      "actual_second_generation": 46,
+      "R2_local_admission_refusal": 3,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 18,
+      "released_final_Tstar_pass": 1,
+      "released_actual_final_Tstar_pass": 1,
+      "final_Tstar_pass": 19,
+      "first_tokens": 296526,
+      "total_tokens": 514590,
+      "R2_tokens": 218064,
+      "first_generation_HTTP_seconds": 189.0630000003148,
+      "total_generation_HTTP_seconds": 323.60700000054203,
+      "first_tokenizer_HTTP_seconds": 0.0,
+      "total_tokenizer_HTTP_seconds": 0.0,
+      "R1_response_status_counts": {
+        "invalid_response": 36,
+        "valid_candidate": 26,
+        "no_change": 4,
+        "budget_refusal": 3
+      },
+      "R1_decoder_rejection_counts": {
+        "single_complete_function_required": 36
+      }
+    },
+    {
+      "service": "kimi",
+      "partition": "C1",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "P0_public_early_stop": 18,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 18,
+      "R1_positions_prepared": 0,
+      "R1_actual_generation": 0,
+      "R1_local_admission_refusal": 0,
+      "R1_decoder_accepted": 0,
+      "R1_decoder_rejected": 0,
+      "R1_no_decoder": 18,
+      "R1_public_all_pass_stop": 0,
+      "R1_public_stop_Tstar_pass": 0,
+      "R1_public_stop_Tstar_fail": 0,
+      "first_Tstar_pass": 0,
+      "first_Tstar_fail": 18,
+      "prepared_continuation": 0,
+      "actual_second_generation": 0,
+      "R2_local_admission_refusal": 0,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 0,
+      "released_final_Tstar_pass": 0,
+      "released_actual_final_Tstar_pass": 0,
+      "final_Tstar_pass": 0,
+      "first_tokens": 0,
+      "total_tokens": 0,
+      "R2_tokens": 0,
+      "first_generation_HTTP_seconds": 0,
+      "total_generation_HTTP_seconds": 0,
+      "first_tokenizer_HTTP_seconds": 0,
+      "total_tokenizer_HTTP_seconds": 0,
+      "R1_response_status_counts": {
+        "no_request_early_stop": 18
+      },
+      "R1_decoder_rejection_counts": {}
+    },
+    {
+      "service": "kimi",
+      "partition": "C1",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "P0_public_early_stop": 0,
+      "P0_public_stop_Tstar_pass": 0,
+      "P0_public_stop_Tstar_fail": 0,
+      "R1_positions_prepared": 69,
+      "R1_actual_generation": 66,
+      "R1_local_admission_refusal": 3,
+      "R1_decoder_accepted": 35,
+      "R1_decoder_rejected": 31,
+      "R1_no_decoder": 3,
+      "R1_public_all_pass_stop": 23,
+      "R1_public_stop_Tstar_pass": 18,
+      "R1_public_stop_Tstar_fail": 5,
+      "first_Tstar_pass": 18,
+      "first_Tstar_fail": 51,
+      "prepared_continuation": 46,
+      "actual_second_generation": 43,
+      "R2_local_admission_refusal": 3,
+      "R2_unsent_global_stop": 0,
+      "retained_stop_final_Tstar_pass": 18,
+      "released_final_Tstar_pass": 2,
+      "released_actual_final_Tstar_pass": 2,
+      "final_Tstar_pass": 20,
+      "first_tokens": 293573,
+      "total_tokens": 492100,
+      "R2_tokens": 198527,
+      "first_generation_HTTP_seconds": 187.00099999911617,
+      "total_generation_HTTP_seconds": 304.89199999859557,
+      "first_tokenizer_HTTP_seconds": 0.0,
+      "total_tokenizer_HTTP_seconds": 0.0,
+      "R1_response_status_counts": {
+        "invalid_response": 31,
+        "valid_candidate": 29,
+        "no_change": 6,
+        "budget_refusal": 3
+      },
+      "R1_decoder_rejection_counts": {
+        "single_complete_function_required": 30,
+        "exact_signature_bytes_changed": 1
+      }
+    }
+  ],
+  "stratum_pairs": [
+    {
+      "service": "qwen",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "timepoint": "first",
+      "both_pass": 0,
+      "C1_only_pass": 0,
+      "C0_only_pass": 9,
+      "neither_pass": 9,
+      "C1_pass": 0,
+      "C0_pass": 9,
+      "discordant_tasks": 3,
+      "C1_minus_C0_task_mean_percentage_points": -50.0,
+      "C0_tokens": 90081,
+      "C1_tokens": 0,
+      "C1_minus_C0_mean_task_repeat_tokens": -5004.5,
+      "task_details": [
+        {
+          "task": "595",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12993,
+          "C1_tokens": 0
+        },
+        {
+          "task": "713",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 15876,
+          "C1_tokens": 0
+        },
+        {
+          "task": "796",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 14862,
+          "C1_tokens": 0
+        },
+        {
+          "task": "860",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13485,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1097",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 17523,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1111",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 15342,
+          "C1_tokens": 0
+        }
+      ]
+    },
+    {
+      "service": "qwen",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "timepoint": "final",
+      "both_pass": 0,
+      "C1_only_pass": 0,
+      "C0_only_pass": 13,
+      "neither_pass": 5,
+      "C1_pass": 0,
+      "C0_pass": 13,
+      "discordant_tasks": 5,
+      "C1_minus_C0_task_mean_percentage_points": -72.22222222222221,
+      "C0_tokens": 135136,
+      "C1_tokens": 0,
+      "C1_minus_C0_mean_task_repeat_tokens": -7507.555555555556,
+      "task_details": [
+        {
+          "task": "595",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 27676,
+          "C1_tokens": 0
+        },
+        {
+          "task": "713",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 15876,
+          "C1_tokens": 0
+        },
+        {
+          "task": "796",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 14862,
+          "C1_tokens": 0
+        },
+        {
+          "task": "860",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 27633,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1097",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 17523,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1111",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 31566,
+          "C1_tokens": 0
+        }
+      ]
+    },
+    {
+      "service": "qwen",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "timepoint": "first",
+      "both_pass": 24,
+      "C1_only_pass": 0,
+      "C0_only_pass": 7,
+      "neither_pass": 38,
+      "C1_pass": 24,
+      "C0_pass": 31,
+      "discordant_tasks": 3,
+      "C1_minus_C0_task_mean_percentage_points": -10.144927536231885,
+      "C0_tokens": 357440,
+      "C1_tokens": 352689,
+      "C1_minus_C0_mean_task_repeat_tokens": -68.85507246376811,
+      "task_details": [
+        {
+          "task": "172",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13563,
+          "C1_tokens": 13599
+        },
+        {
+          "task": "545",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13881,
+          "C1_tokens": 13725
+        },
+        {
+          "task": "668",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 14946,
+          "C1_tokens": 14958
+        },
+        {
+          "task": "694",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11289,
+          "C1_tokens": 11271
+        },
+        {
+          "task": "722",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 15524,
+          "C1_tokens": 15420
+        },
+        {
+          "task": "739",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13023,
+          "C1_tokens": 13047
+        },
+        {
+          "task": "765",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 14715,
+          "C1_tokens": 14970
+        },
+        {
+          "task": "851",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13707,
+          "C1_tokens": 13746
+        },
+        {
+          "task": "892",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12107,
+          "C1_tokens": 12030
+        },
+        {
+          "task": "898",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 14195,
+          "C1_tokens": 14004
+        },
+        {
+          "task": "912",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 12280,
+          "C1_tokens": 12261
+        },
+        {
+          "task": "934",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12019,
+          "C1_tokens": 12026
+        },
+        {
+          "task": "956",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 23238,
+          "C1_tokens": 23065
+        },
+        {
+          "task": "958",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 16716,
+          "C1_tokens": 16320
+        },
+        {
+          "task": "989",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 24648,
+          "C1_tokens": 23394
+        },
+        {
+          "task": "991",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13254,
+          "C1_tokens": 13153
+        },
+        {
+          "task": "1009",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21141,
+          "C1_tokens": 20799
+        },
+        {
+          "task": "1090",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 17488,
+          "C1_tokens": 15627
+        },
+        {
+          "task": "1108",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12972,
+          "C1_tokens": 12984
+        },
+        {
+          "task": "1110",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13364,
+          "C1_tokens": 13524
+        },
+        {
+          "task": "1112",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 14445,
+          "C1_tokens": 14355
+        },
+        {
+          "task": "1116",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 17835,
+          "C1_tokens": 17876
+        },
+        {
+          "task": "1132",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21090,
+          "C1_tokens": 20535
+        }
+      ]
+    },
+    {
+      "service": "qwen",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "timepoint": "final",
+      "both_pass": 33,
+      "C1_only_pass": 2,
+      "C0_only_pass": 4,
+      "neither_pass": 30,
+      "C1_pass": 35,
+      "C0_pass": 37,
+      "discordant_tasks": 3,
+      "C1_minus_C0_task_mean_percentage_points": -2.898550724637681,
+      "C0_tokens": 505251,
+      "C1_tokens": 529506,
+      "C1_minus_C0_mean_task_repeat_tokens": 351.5217391304348,
+      "task_details": [
+        {
+          "task": "172",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13563,
+          "C1_tokens": 13599
+        },
+        {
+          "task": "545",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13881,
+          "C1_tokens": 13725
+        },
+        {
+          "task": "668",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 30963,
+          "C1_tokens": 30982
+        },
+        {
+          "task": "694",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11289,
+          "C1_tokens": 11271
+        },
+        {
+          "task": "722",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 21304,
+          "C1_tokens": 32724
+        },
+        {
+          "task": "739",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 26718,
+          "C1_tokens": 26751
+        },
+        {
+          "task": "765",
+          "C1_minus_C0_successes": 2,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.6666666666666666,
+          "C0_tokens": 30417,
+          "C1_tokens": 30913
+        },
+        {
+          "task": "851",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 28197,
+          "C1_tokens": 28224
+        },
+        {
+          "task": "892",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 25024,
+          "C1_tokens": 24648
+        },
+        {
+          "task": "898",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 24093,
+          "C1_tokens": 28656
+        },
+        {
+          "task": "912",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12280,
+          "C1_tokens": 25221
+        },
+        {
+          "task": "934",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 25231,
+          "C1_tokens": 25263
+        },
+        {
+          "task": "956",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 23238,
+          "C1_tokens": 23065
+        },
+        {
+          "task": "958",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 34352,
+          "C1_tokens": 33570
+        },
+        {
+          "task": "989",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 24648,
+          "C1_tokens": 23394
+        },
+        {
+          "task": "991",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 27306,
+          "C1_tokens": 27376
+        },
+        {
+          "task": "1009",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21141,
+          "C1_tokens": 20799
+        },
+        {
+          "task": "1090",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 17488,
+          "C1_tokens": 15627
+        },
+        {
+          "task": "1108",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 27384,
+          "C1_tokens": 27408
+        },
+        {
+          "task": "1110",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13364,
+          "C1_tokens": 13524
+        },
+        {
+          "task": "1112",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 14445,
+          "C1_tokens": 14355
+        },
+        {
+          "task": "1116",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 17835,
+          "C1_tokens": 17876
+        },
+        {
+          "task": "1132",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21090,
+          "C1_tokens": 20535
+        }
+      ]
+    },
+    {
+      "service": "kimi",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "timepoint": "first",
+      "both_pass": 0,
+      "C1_only_pass": 0,
+      "C0_only_pass": 6,
+      "neither_pass": 12,
+      "C1_pass": 0,
+      "C0_pass": 6,
+      "discordant_tasks": 4,
+      "C1_minus_C0_task_mean_percentage_points": -33.333333333333336,
+      "C0_tokens": 80930,
+      "C1_tokens": 0,
+      "C1_minus_C0_mean_task_repeat_tokens": -4496.111111111111,
+      "task_details": [
+        {
+          "task": "595",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11465,
+          "C1_tokens": 0
+        },
+        {
+          "task": "713",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 14077,
+          "C1_tokens": 0
+        },
+        {
+          "task": "796",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13438,
+          "C1_tokens": 0
+        },
+        {
+          "task": "860",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 12113,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1097",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 15987,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1111",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 13850,
+          "C1_tokens": 0
+        }
+      ]
+    },
+    {
+      "service": "kimi",
+      "stratum": "C1_P0_early_stop",
+      "tasks": 6,
+      "paired_task_repetitions": 18,
+      "timepoint": "final",
+      "both_pass": 0,
+      "C1_only_pass": 0,
+      "C0_only_pass": 10,
+      "neither_pass": 8,
+      "C1_pass": 0,
+      "C0_pass": 10,
+      "discordant_tasks": 5,
+      "C1_minus_C0_task_mean_percentage_points": -55.55555555555555,
+      "C0_tokens": 135997,
+      "C1_tokens": 0,
+      "C1_minus_C0_mean_task_repeat_tokens": -7555.388888888889,
+      "task_details": [
+        {
+          "task": "595",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 24032,
+          "C1_tokens": 0
+        },
+        {
+          "task": "713",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 24081,
+          "C1_tokens": 0
+        },
+        {
+          "task": "796",
+          "C1_minus_C0_successes": -2,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.6666666666666666,
+          "C0_tokens": 27405,
+          "C1_tokens": 0
+        },
+        {
+          "task": "860",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 20537,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1097",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 15987,
+          "C1_tokens": 0
+        },
+        {
+          "task": "1111",
+          "C1_minus_C0_successes": -3,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -1.0,
+          "C0_tokens": 23955,
+          "C1_tokens": 0
+        }
+      ]
+    },
+    {
+      "service": "kimi",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "timepoint": "first",
+      "both_pass": 13,
+      "C1_only_pass": 5,
+      "C0_only_pass": 5,
+      "neither_pass": 46,
+      "C1_pass": 18,
+      "C0_pass": 18,
+      "discordant_tasks": 9,
+      "C1_minus_C0_task_mean_percentage_points": 0.0,
+      "C0_tokens": 296526,
+      "C1_tokens": 293573,
+      "C1_minus_C0_mean_task_repeat_tokens": -42.79710144927536,
+      "task_details": [
+        {
+          "task": "172",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11999,
+          "C1_tokens": 12106
+        },
+        {
+          "task": "545",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12063,
+          "C1_tokens": 12000
+        },
+        {
+          "task": "668",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13328,
+          "C1_tokens": 13333
+        },
+        {
+          "task": "694",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 9825,
+          "C1_tokens": 9795
+        },
+        {
+          "task": "722",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 14000,
+          "C1_tokens": 13956
+        },
+        {
+          "task": "739",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11547,
+          "C1_tokens": 11556
+        },
+        {
+          "task": "765",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13218,
+          "C1_tokens": 13457
+        },
+        {
+          "task": "851",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12394,
+          "C1_tokens": 12440
+        },
+        {
+          "task": "892",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 10624,
+          "C1_tokens": 10664
+        },
+        {
+          "task": "898",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 12744,
+          "C1_tokens": 12570
+        },
+        {
+          "task": "912",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 10917,
+          "C1_tokens": 10822
+        },
+        {
+          "task": "934",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 10639,
+          "C1_tokens": 10610
+        },
+        {
+          "task": "956",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 20608,
+          "C1_tokens": 20556
+        },
+        {
+          "task": "958",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 14779,
+          "C1_tokens": 14412
+        },
+        {
+          "task": "989",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 0,
+          "C1_tokens": 0
+        },
+        {
+          "task": "991",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11760,
+          "C1_tokens": 11566
+        },
+        {
+          "task": "1009",
+          "C1_minus_C0_successes": 2,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.6666666666666666,
+          "C0_tokens": 18863,
+          "C1_tokens": 18679
+        },
+        {
+          "task": "1090",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 15593,
+          "C1_tokens": 13948
+        },
+        {
+          "task": "1108",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 11542,
+          "C1_tokens": 11430
+        },
+        {
+          "task": "1110",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 11922,
+          "C1_tokens": 12105
+        },
+        {
+          "task": "1112",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 12935,
+          "C1_tokens": 12822
+        },
+        {
+          "task": "1116",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 16393,
+          "C1_tokens": 16363
+        },
+        {
+          "task": "1132",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 18833,
+          "C1_tokens": 18383
+        }
+      ]
+    },
+    {
+      "service": "kimi",
+      "stratum": "repair_feedback",
+      "tasks": 23,
+      "paired_task_repetitions": 69,
+      "timepoint": "final",
+      "both_pass": 15,
+      "C1_only_pass": 5,
+      "C0_only_pass": 4,
+      "neither_pass": 45,
+      "C1_pass": 20,
+      "C0_pass": 19,
+      "discordant_tasks": 8,
+      "C1_minus_C0_task_mean_percentage_points": 1.4492753623188404,
+      "C0_tokens": 514590,
+      "C1_tokens": 492100,
+      "C1_minus_C0_mean_task_repeat_tokens": -325.94202898550725,
+      "task_details": [
+        {
+          "task": "172",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 20392,
+          "C1_tokens": 20568
+        },
+        {
+          "task": "545",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 12063,
+          "C1_tokens": 12000
+        },
+        {
+          "task": "668",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 27532,
+          "C1_tokens": 27543
+        },
+        {
+          "task": "694",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 13266,
+          "C1_tokens": 13226
+        },
+        {
+          "task": "722",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 19217,
+          "C1_tokens": 24314
+        },
+        {
+          "task": "739",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 23832,
+          "C1_tokens": 23674
+        },
+        {
+          "task": "765",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 27271,
+          "C1_tokens": 27751
+        },
+        {
+          "task": "851",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 25482,
+          "C1_tokens": 21219
+        },
+        {
+          "task": "892",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21847,
+          "C1_tokens": 22018
+        },
+        {
+          "task": "898",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 21618,
+          "C1_tokens": 25680
+        },
+        {
+          "task": "912",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 22431,
+          "C1_tokens": 18440
+        },
+        {
+          "task": "934",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 21762,
+          "C1_tokens": 21713
+        },
+        {
+          "task": "956",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 35081,
+          "C1_tokens": 42273
+        },
+        {
+          "task": "958",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 30387,
+          "C1_tokens": 24574
+        },
+        {
+          "task": "989",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 0,
+          "C1_tokens": 0
+        },
+        {
+          "task": "991",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 24897,
+          "C1_tokens": 24407
+        },
+        {
+          "task": "1009",
+          "C1_minus_C0_successes": 2,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.6666666666666666,
+          "C0_tokens": 38576,
+          "C1_tokens": 25215
+        },
+        {
+          "task": "1090",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 32212,
+          "C1_tokens": 23836
+        },
+        {
+          "task": "1108",
+          "C1_minus_C0_successes": -1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": -0.3333333333333333,
+          "C0_tokens": 19621,
+          "C1_tokens": 23390
+        },
+        {
+          "task": "1110",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 11922,
+          "C1_tokens": 16283
+        },
+        {
+          "task": "1112",
+          "C1_minus_C0_successes": 1,
+          "any_discordant_repetition": true,
+          "task_mean_difference": 0.3333333333333333,
+          "C0_tokens": 17628,
+          "C1_tokens": 12822
+        },
+        {
+          "task": "1116",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 22162,
+          "C1_tokens": 16363
+        },
+        {
+          "task": "1132",
+          "C1_minus_C0_successes": 0,
+          "any_discordant_repetition": false,
+          "task_mean_difference": 0.0,
+          "C0_tokens": 25391,
+          "C1_tokens": 24791
+        }
+      ]
+    }
+  ],
+  "interpretation": "conditional on C0 failure; six C1 P0 stop tasks and 23 repair-feedback tasks; not forced-generation counterfactuals"
+}

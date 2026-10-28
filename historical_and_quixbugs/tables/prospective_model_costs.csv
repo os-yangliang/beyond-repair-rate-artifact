@@ -1,0 +1,17 @@
+accounting,arm,completion_tokens,generation_attempts,opportunity,prompt_tokens,service,tokenizer_attempts,total_tokens,unknown_usage_attempts
+physical,shared,1948,12,1,68022,qwen,12,69970,0
+overlapping_logical,SEED,974,6,1,34011,qwen,6,34985,0
+overlapping_logical,CLOSURE,974,6,1,34014,qwen,6,34988,0
+overlapping_logical,FULL,974,6,1,34011,qwen,6,34985,0
+physical,shared,942,6,2,37244,qwen,6,38186,0
+overlapping_logical,SEED,942,6,2,37244,qwen,6,38186,0
+overlapping_logical,CLOSURE,558,3,2,18893,qwen,3,19451,0
+overlapping_logical,FULL,558,3,2,18893,qwen,3,19451,0
+physical,shared,1895,12,1,59472,kimi,0,61367,0
+overlapping_logical,SEED,938,6,1,29736,kimi,0,30674,0
+overlapping_logical,CLOSURE,957,6,1,29736,kimi,0,30693,0
+overlapping_logical,FULL,957,6,1,29736,kimi,0,30693,0
+physical,shared,363,3,2,16030,kimi,0,16393,0
+overlapping_logical,SEED,363,3,2,16030,kimi,0,16393,0
+overlapping_logical,CLOSURE,0,0,2,0,kimi,0,0,0
+overlapping_logical,FULL,0,0,2,0,kimi,0,0,0

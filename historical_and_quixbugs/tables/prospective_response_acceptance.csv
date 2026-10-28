@@ -1,0 +1,5 @@
+decoder_diagnostics,generation_attempts,generation_without_decoder_diagnostic,leading_blank_lines_changed_replies,normalization_rescues,normalized_accepted,normalized_not_decided,normalized_rejected,not_generated,opportunity,physical_request_positions,service,strict_accepted,strict_not_decided,strict_rejected
+12,12,0,0,0,9,0,3,0,1,12,qwen,9,0,3
+6,6,0,0,0,6,0,0,0,2,6,qwen,6,0,0
+12,12,0,0,0,9,0,3,0,1,12,kimi,9,0,3
+3,3,0,0,0,3,0,0,0,2,3,kimi,3,0,0

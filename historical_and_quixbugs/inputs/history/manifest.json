@@ -1,0 +1,72 @@
+{
+  "inputs": [
+    {
+      "bytes": 11977,
+      "dataset": "study_1",
+      "file": "study_1.json",
+      "sha256": "ef8ab253fd6ebabf0c8f295092f53b58a930441fde1596dad5ab54a71274925a",
+      "source_analysis": {
+        "bytes": 41148,
+        "label": "study_1_closed_analysis",
+        "sha256": "26e64ccadb0ded313ed47251bbde26785aae259fea6c59dc7642482857be8bb4"
+      }
+    },
+    {
+      "bytes": 9821,
+      "dataset": "study_2",
+      "file": "study_2.json",
+      "sha256": "2c235a40ce139f0de2e647112741f208307f3e140775977326d0c4e4c75d069b",
+      "source_analysis": {
+        "bytes": 25552,
+        "label": "study_2_closed_analysis",
+        "sha256": "3c9e40f94566d3cbdc4095e813e8214d1249c98fff608163b0b50101befadf29"
+      }
+    },
+    {
+      "bytes": 14832,
+      "dataset": "study_3",
+      "file": "study_3.json",
+      "sha256": "5874babab436b0954a64762d04c41f7c748f1f93d59dc1b1bda0c96e68b338f1",
+      "source_analysis": {
+        "bytes": 40296,
+        "label": "study_3_closed_analysis",
+        "sha256": "5b7b1fd772301f5da02b580908d25b847d4596b9173e829d85c372595df69901"
+      }
+    },
+    {
+      "bytes": 22983,
+      "dataset": "external_qwen",
+      "file": "external_qwen.json",
+      "sha256": "d94e6fb31fd4426032f4c4b1552054b8ebeb223ccbed02b3cabd833250620e02",
+      "source_analysis": {
+        "bytes": 125935,
+        "label": "external_qwen_closed_analysis",
+        "sha256": "0e10695c6b17debad1112162999f38aa77eda0a7c08fa8cd5ac2bb96a469b072"
+      }
+    },
+    {
+      "bytes": 22978,
+      "dataset": "external_kimi",
+      "file": "external_kimi.json",
+      "sha256": "998a1f97b386e896bd9fda1faaa75d006ec60787f7fb2154455139753db15308",
+      "source_analysis": {
+        "bytes": 154700,
+        "label": "external_kimi_closed_analysis",
+        "sha256": "a4b57bc2f24b9e67e91ecd5fec1087a96d8bd420e89dc6af9b1e467b8ec37155"
+      }
+    },
+    {
+      "bytes": 47922,
+      "dataset": "format_first_response",
+      "file": "format_first_response.json",
+      "sha256": "2acdfef170d3a582debf763a49135588d7038538f1e211d9fbaea9c0c3c26c7a",
+      "source_analysis": {
+        "bytes": 125399,
+        "label": "format_first_response_closed_analysis",
+        "sha256": "990fd2acd057c21523cd688f795d3d896b46e8bde647e45a00441713b8aea810"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "sanitized_analysis_replay_only"
+}
