@@ -1,7 +1,11 @@
 # License status
 
-This publication does not assign an additional open-source, data or documentation license. The rights holder may specify one in a later release. Public availability is not itself a grant of an unrestricted reuse license.
+## Version 1.2.0
 
-The included files are the allowlisted sanitized analysis projections, arithmetic replay scripts and explanatory documents. Third-party benchmark source assets, test bodies, reference implementations, model weights and raw model replies are not distributed. Upstream benchmark or model licenses are not asserted as licenses for this combined artifact.
+The artifact contributors' arithmetic replay scripts, documentation and sanitized result metadata distributed in this release are licensed under the **MIT License** in the root `LICENSE` file. The author explicitly authorized this license for the release. The copyright notice is **Copyright (c) 2026 Beyond Repair Rate artifact contributors**.
 
-This statement records the present licensing status; it is not a requirement to postpone the author-authorized public release. Historical licensing/publication notes in the copied subsets are preserved as dated provenance. No rights-holder name or license grant has been invented by the assembly process.
+Third-party content remains subject to its original rights and any accompanying notices. The MIT grant does not relicense benchmark source assets, test bodies, reference implementations, model weights or provider services. No such assets, raw model replies or prompts are added in this release. Citations, upstream identifiers and hashes provide provenance; they do not grant rights to the referenced materials.
+
+The 50 copied component files, their original manifests and archived outputs remain byte for byte unchanged. Earlier publication or licensing statements inside those historical copies are retained as dated provenance; this root-level notice states the current release's license for contributor-owned content. Previous release tags are unchanged.
+
+Version 1.2.0 changes licensing and release documentation only. It does not change results, reproduction logic or the scope of the released evidence.

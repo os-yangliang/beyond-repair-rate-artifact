@@ -2,7 +2,9 @@
 
 This artifact accompanies **Beyond Repair Rate: Auditing Effective Edit Permissions and Response Acceptance in LLM-Based Program Repair**, the standalone manuscript prepared in October 2026. It provides sanitized outcome metadata and offline arithmetic reproduction. It does **not** rerun a model, execute a candidate or a test, or independently reconstruct the original experimental records.
 
-Version **1.1.0** retains all 38 copied files from the three original analysis subsets byte for byte and adds a 12-file task-cluster interval package. The resulting 50 copied files are accompanied by root-level assembly documentation, manifest and runner. The new intervals are a **post-hoc secondary analysis of known outcomes**, not a new experiment or preregistered confirmation. Statements such as “local, unpublished”, “publication deferred”, and old table numbers in the copied subsets are **dated provenance from their preparation**, not the current repository's publication status or the current manuscript's numbering. The current mapping is below.
+Version **1.2.0** applies the **MIT License** to contributor-owned scripts, documentation and sanitized result metadata. It preserves all 50 copied component files, the original manifest, runner and archived outputs byte for byte. No new experimental material is added. Third-party rights remain unchanged; see [LICENSE](LICENSE) and [LICENSE_STATUS.md](LICENSE_STATUS.md).
+
+Version 1.1.0 retained the original 38 copied files and added the 12-file task-cluster interval package. Those intervals are a **post-hoc secondary analysis of known outcomes**, not a new experiment or preregistered confirmation. Statements such as “local, unpublished”, “publication deferred”, and old table numbers in the copied subsets are **dated provenance from their preparation**, not the current repository's publication status or the current manuscript's numbering. The current mapping is below.
 
 ## One-command offline reproduction
 
