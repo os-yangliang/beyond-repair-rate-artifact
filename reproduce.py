@@ -12,7 +12,10 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-PACKAGES = ("historical_and_quixbugs", "bigcode_analysis", "bigcode_transitions")
+PACKAGES = ("historical_and_quixbugs", "bigcode_analysis", "bigcode_transitions",
+            "task_cluster_intervals")
+PACKAGE_FILE_COUNTS = {"historical_and_quixbugs": 29, "bigcode_analysis": 4,
+                       "bigcode_transitions": 5, "task_cluster_intervals": 12}
 
 
 def require(condition, message):
@@ -28,7 +31,9 @@ def check_manifest():
     manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
     require(manifest["schema_version"] == 1, "unsupported manifest version")
     files = manifest["files"]
-    require(len(files) == manifest["copied_file_count"] == 38, "expected 38 copied files")
+    require(manifest["artifact_version"] == "1.1.0", "unexpected artifact version")
+    require(manifest["packages"] == PACKAGE_FILE_COUNTS, "package counts differ")
+    require(len(files) == manifest["copied_file_count"] == 50, "expected 50 copied files")
     names = [item["path"] for item in files]
     require(len(set(names)) == len(names), "duplicate manifest paths")
     for item in files:
@@ -43,6 +48,7 @@ def check_manifest():
                 "integrity mismatch: " + item["path"])
     for package in PACKAGES:
         expected = {name for name in names if name.startswith(package + "/")}
+        require(len(expected) == PACKAGE_FILE_COUNTS[package], "package manifest count differs")
         actual = {p.relative_to(ROOT).as_posix()
                   for p in (ROOT / package).rglob("*") if p.is_file()}
         require(actual == expected, "unexpected or missing files in " + package)
@@ -63,6 +69,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=ROOT / "reproduced",
                         help="new output directory; an existing directory is refused")
+    parser.add_argument("--component", choices=("all", *PACKAGES), default="all",
+                        help="recompute only this component; all frozen files are still verified")
     args = parser.parse_args()
     require(sys.version_info >= (3, 9), "Python 3.9 or later is required")
     require(not sys.flags.optimize, "do not use -O: component assertions must remain enabled")
@@ -73,6 +81,7 @@ def main():
                 "output cannot be inside a frozen package")
     out.mkdir(parents=True)
     report = {"schema_version": 1, "scope": "sanitized_analysis_reproduction_only",
+              "artifact_version": "1.1.0", "selected_component": args.component,
               "status": "running", "copied_files_verified": 0,
               "commands": [], "comparisons": [], "new_model_calls": 0,
               "candidate_or_test_executions": 0, "network_requests": 0}
@@ -102,31 +111,46 @@ def main():
 
     try:
         report["copied_files_verified"] = len(check_manifest())
-        rebuilt = out / "historical_and_quixbugs_tables"
-        run("historical_and_quixbugs", "historical_and_quixbugs/replay.py",
-            ("--out", rebuilt))
-        archived = ROOT / "historical_and_quixbugs/tables"
-        expected_files = {p.name for p in archived.iterdir() if p.is_file()}
-        actual_files = {p.name for p in rebuilt.iterdir() if p.is_file()}
-        require(expected_files == actual_files, "historical table output file set differs")
-        for name in sorted(expected_files):
-            compare("historical_and_quixbugs/tables/" + name,
-                    (archived / name).read_bytes(), (rebuilt / name).read_bytes(),
-                    Path(name).suffix)
-        analysis = run("bigcode_analysis", "bigcode_analysis/replay.py")
-        compare("bigcode_analysis/replay_report.md",
-                (ROOT / "bigcode_analysis/replay_report.md").read_bytes(), analysis, ".md")
-        transitions = run("bigcode_transitions", "bigcode_transitions/reconstruct.py")
-        # reconstruct.py prints an already newline-terminated report. Remove
-        # exactly its extra console print terminator, not report whitespace.
-        transitions = transitions.replace(b"\r\n", b"\n")
-        require(transitions.endswith(b"\n"), "missing transition console terminator")
-        transitions = transitions[:-1]
-        compare("bigcode_transitions/tables.md",
-                (ROOT / "bigcode_transitions/tables.md").read_bytes(), transitions, ".md")
-        # Transition assertions and printed tables are replayed. The archived
-        # machine-readable summary is integrity-checked, not silently regenerated.
-        require(len(check_manifest()) == 38, "post-run integrity check failed")
+        selected = set(PACKAGES) if args.component == "all" else {args.component}
+        if "historical_and_quixbugs" in selected:
+            rebuilt = out / "historical_and_quixbugs_tables"
+            run("historical_and_quixbugs", "historical_and_quixbugs/replay.py",
+                ("--out", rebuilt))
+            archived = ROOT / "historical_and_quixbugs/tables"
+            expected_files = {p.name for p in archived.iterdir() if p.is_file()}
+            actual_files = {p.name for p in rebuilt.iterdir() if p.is_file()}
+            require(expected_files == actual_files, "historical table output file set differs")
+            for name in sorted(expected_files):
+                compare("historical_and_quixbugs/tables/" + name,
+                        (archived / name).read_bytes(), (rebuilt / name).read_bytes(),
+                        Path(name).suffix)
+        if "bigcode_analysis" in selected:
+            analysis = run("bigcode_analysis", "bigcode_analysis/replay.py")
+            compare("bigcode_analysis/replay_report.md",
+                    (ROOT / "bigcode_analysis/replay_report.md").read_bytes(), analysis, ".md")
+        if "bigcode_transitions" in selected:
+            transitions = run("bigcode_transitions", "bigcode_transitions/reconstruct.py")
+            # reconstruct.py prints an already newline-terminated report. Remove
+            # exactly its extra console print terminator, not report whitespace.
+            transitions = transitions.replace(b"\r\n", b"\n")
+            require(transitions.endswith(b"\n"), "missing transition console terminator")
+            transitions = transitions[:-1]
+            compare("bigcode_transitions/tables.md",
+                    (ROOT / "bigcode_transitions/tables.md").read_bytes(), transitions, ".md")
+            # The archived machine-readable summary is integrity-checked,
+            # not silently regenerated by the existing transition entry point.
+        if "task_cluster_intervals" in selected:
+            rebuilt = out / "task_cluster_intervals_results"
+            run("task_cluster_intervals", "task_cluster_intervals/analyze.py", ("--out", rebuilt))
+            archived = ROOT / "task_cluster_intervals/results"
+            expected_files = {p.name for p in archived.iterdir() if p.is_file()}
+            actual_files = {p.name for p in rebuilt.iterdir() if p.is_file()}
+            require(expected_files == actual_files, "interval output file set differs")
+            for name in sorted(expected_files):
+                compare("task_cluster_intervals/results/" + name,
+                        (archived / name).read_bytes(), (rebuilt / name).read_bytes(),
+                        Path(name).suffix)
+        require(len(check_manifest()) == 50, "post-run integrity check failed")
         report["status"] = "passed"
     except Exception as error:
         report["status"] = "failed"

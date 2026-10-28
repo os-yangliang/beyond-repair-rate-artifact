@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "scope": "sanitized_analysis_reproduction_only",
-  "copied_file_count": 38,
+  "copied_file_count": 50,
   "packages": {
     "historical_and_quixbugs": 29,
     "bigcode_analysis": 4,
-    "bigcode_transitions": 5
+    "bigcode_transitions": 5,
+    "task_cluster_intervals": 12
   },
   "files": [
     {
@@ -197,7 +198,68 @@
       "path": "bigcode_transitions/tables.md",
       "bytes": 5504,
       "sha256": "e079d8238719bca366debb58b82233e518161b7705a9fdad6c256a9640d8beb4"
+    },
+    {
+      "path": "task_cluster_intervals/analysis_plan.json",
+      "bytes": 4003,
+      "sha256": "1e32a8814f34db9f8ceb347c9ea5007793ec17d26e9f907baf69907a73a2485a"
+    },
+    {
+      "path": "task_cluster_intervals/analysis_plan.md",
+      "bytes": 3191,
+      "sha256": "151a4817377735cfb36fb718742ce5cda276888228898bc6ca49a31b7d7d1a3c"
+    },
+    {
+      "path": "task_cluster_intervals/analyze.py",
+      "bytes": 14581,
+      "sha256": "568de171a13a17a7979ce561bafbd6bfaefc36b77b0672a83c2d7a100d2aa6ce"
+    },
+    {
+      "path": "task_cluster_intervals/manifest.json",
+      "bytes": 1937,
+      "sha256": "af24194c6cb3c4db329c4c235c1c249b45031e46c4f0b4635f6f97e6e36aa44f"
+    },
+    {
+      "path": "task_cluster_intervals/README.md",
+      "bytes": 7362,
+      "sha256": "772e5d59704d874f271a9652c094756f8c8d7bcfb9a57df8a0fa4adb5f7694f6"
+    },
+    {
+      "path": "task_cluster_intervals/results/early_stop_descriptive.csv",
+      "bytes": 2571,
+      "sha256": "990dfd330219931cfbce7285c91401137133198724f9a4630b64ea9081ecc064"
+    },
+    {
+      "path": "task_cluster_intervals/results/interval_results.csv",
+      "bytes": 5810,
+      "sha256": "184a85b7a3176bc46b030c42e2a5ebe46fb17d5ecc57a83628637b0ce9b2c37e"
+    },
+    {
+      "path": "task_cluster_intervals/results/interval_results.json",
+      "bytes": 26905,
+      "sha256": "2b00032b9098efa0d2a41f921d062d5363baadae3cc2005fbf778c0130c60e4c"
+    },
+    {
+      "path": "task_cluster_intervals/results/main_table.md",
+      "bytes": 633,
+      "sha256": "a446d34c35c60771bb78f35a04fbb3144234982ba1690497c95658276a612e8c"
+    },
+    {
+      "path": "task_cluster_intervals/results/task_differences.csv",
+      "bytes": 9042,
+      "sha256": "98a20b60dafaaaa465d046303521a681cc6b50d89db62fa6bcf03910b0265dcf"
+    },
+    {
+      "path": "task_cluster_intervals/results/validation.json",
+      "bytes": 24814,
+      "sha256": "3634854d39598807c6b1c1cbd0ea96049724ae5ee9d3cef3257a9bf95779480e"
+    },
+    {
+      "path": "task_cluster_intervals/safe_projection.json",
+      "bytes": 657240,
+      "sha256": "4502552cd74dd873252f4c9711dbe7fd402d3623559e8b48e3701723c95aae61"
     }
   ],
-  "note": "Copied package files retain their original bytes. This manifest verifies integrity, not experimental correctness. Root README.md and reproduce.py are new assembly files and are not frozen historical inputs."
+  "note": "The original 38 package files retain their original bytes. The 12 added task-cluster files are post-hoc analysis of already public safe metadata. This manifest verifies integrity, not experimental correctness. Root README.md and reproduce.py are assembly files, not frozen historical inputs.",
+  "artifact_version": "1.1.0"
 }
